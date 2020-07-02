@@ -6,15 +6,48 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020/7 | Hexo</title>
+  <title>linux软件安装指导 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2020/07/index.html">
+  <meta name="description" content="​                                                 关闭防火墙 检查 防火墙（linux）是否关闭？或者释放了3306（如果防火墙关闭了，就无需释放） 1#  firewall-cmd --state  如果是开着的，直接关闭，使用指令  1# systemctl stop firewalld">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux软件安装指导">
+<meta property="og:url" content="http://yoursite.com/2020/07/02/linux%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E6%8C%87%E5%AF%BC/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="​                                                 关闭防火墙 检查 防火墙（linux）是否关闭？或者释放了3306（如果防火墙关闭了，就无需释放） 1#  firewall-cmd --state  如果是开着的，直接关闭，使用指令  1# systemctl stop firewalld">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593268339889.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593272512946.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593272732051.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593272830481.png">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/4773465-f61d450c92002962.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/4773465-1285a491ff73632f.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593353115933.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593390770307.png">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/4773465-f25f02b9deefad0d.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/4773465-a241c31f84a0c85b.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593402725812.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593402870032.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593408671609.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593479857712.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593483646404.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593483723400.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593483820866.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593484459060.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593484620203.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593481740185.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593482062607.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593482767275.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593507053661.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593507495042.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593507053661.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593507495042.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593523149268.png">
+<meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593522617771.png">
+<meta property="article:published_time" content="2020-07-02T02:53:11.815Z">
+<meta property="article:modified_time" content="2020-07-02T02:54:16.889Z">
 <meta property="article:author" content="yangzhixue">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593268339889.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -144,130 +177,774 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-linux软件安装指导" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      linux软件安装指导
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/02/linux%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E6%8C%87%E5%AF%BC/" class="archive-article-date">
+
+        
+        <a href="/2020/07/02/linux%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E6%8C%87%E5%AF%BC/" class="archive-article-date">
   	<time datetime="2020-07-02T02:53:11.815Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-02</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/02/linux%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E6%8C%87%E5%AF%BC/">linux软件安装指导</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>​                                                </p>
+<h2 id="关闭防火墙"><a href="#关闭防火墙" class="headerlink" title="关闭防火墙"></a>关闭防火墙</h2><p> 检查 防火墙（linux）是否关闭？或者释放了3306（如果防火墙关闭了，就无需释放）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">  firewall-cmd --state</span></span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+<p>如果是开着的，直接关闭，使用指令 </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> systemctl stop firewalld</span></span><br></pre></td></tr></table></figure>
 
+<a id="more"></a>
+
+<p>查看进程号：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -aux | grep java</span><br></pre></td></tr></table></figure>
+
+<p>关闭进程号</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kill 进程号</span><br><span class="line">kill -9 进程号  强制关闭</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<h2 id="1-vim常用命令"><a href="#1-vim常用命令" class="headerlink" title="1.vim常用命令"></a>1.vim常用命令</h2><p>退出是ESC，然后:wq（保存并退出），:q!(不保存并强制退出），i进入vim模式。按ESC键 跳到命令模式，然后</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">:w 保存文件但不退出vi</span><br><span class="line">:w file 将修改另外保存到file中，不退出vi</span><br><span class="line">:w! 强制保存，不推出vi</span><br><span class="line">:wq 保存文件并退出vi</span><br><span class="line">:wq! 强制保存文件，并退出vi</span><br><span class="line">q: 不保存文件，退出vi</span><br><span class="line">:q! 不保存文件，强制退出vi</span><br><span class="line">:e! 放弃所有修改，从上次保存文件开始再编辑</span><br></pre></td></tr></table></figure>
+
+<p>在命令模式下，输入/你要查找的字符</p>
+<p>按下回车，可以看到vim把光标移动到该字符处</p>
+<p>再按n（小写）查看下一个匹配</p>
+<p>按N(大写）查看上一个匹配（capslock切换大小写，也可以在小写状态下按shift+n）</p>
+<h2 id="2-JDK（JAVA环境）安装"><a href="#2-JDK（JAVA环境）安装" class="headerlink" title="2.JDK（JAVA环境）安装"></a>2.JDK（JAVA环境）安装</h2><p>注意：这⾥安装的是Oracle JDK</p>
+<p>2.1准备JDK安装包</p>
+<p>我这⾥下载的是 jdk-8u144-linux-x64.tar.gz 安装包</p>
+<p>卸载已有的OPENJDK（如果有）。如果系统⾃带有 OpenJDK ，可以按照如下步骤提前卸载之。 </p>
+<p>⾸先查找已经安装的 OpenJDK 包：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa | grep java</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593268339889.png" alt="1593268339889"></p>
+<p>接下来可以将 java 开头的安装包均卸载即可：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum -y remove java-1.7.0-openjdk-1.7.0.141-2.6.10.5.el7.x86_64</span><br><span class="line">yum -y remove java-1.8.0-openjdk-1.8.0.131-11.b12.el7.x86_64</span><br><span class="line">... 省略 ...</span><br></pre></td></tr></table></figure>
+
+<p>2.2创建⽬录并解压</p>
+<p>1、在 /usr/local/ 下创建 java ⽂件夹并进⼊</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/</span><br><span class="line">mkdir java</span><br><span class="line">cd java</span><br></pre></td></tr></table></figure>
+
+<p>2、将上⾯准备好的 JDK 安装包解压到 /usr/local/java 中即可</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf jdk-8u144-linux-x64.tar.gz</span><br></pre></td></tr></table></figure>
+
+<p>解压完之后， /usr/local/java ⽬录中会出现⼀个 jdk1.8.0_144 的⽬录</p>
+<p>2.3 配置JDK环境变量</p>
+<p>编辑 /etc/profile ⽂件，在⽂件尾部加⼊如下 JDK 环境配置即可</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">JAVA_HOME=/usr/local/java/jdk1.8.0_144</span><br><span class="line">CLASSPATH=$JAVA_HOME/lib/</span><br><span class="line">PATH=$PATH:$JAVA_HOME/bin</span><br><span class="line">export PATH JAVA_HOME CLASSPATH</span><br></pre></td></tr></table></figure>
+
+<p>然后执⾏如下命令让环境变量⽣效</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+
+<p>2.4 验证JDK安装结果</p>
+<p>输⼊如下命令即可检查安装结果：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br><span class="line">javac</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-NODE环境安装"><a href="#3-NODE环境安装" class="headerlink" title="3.NODE环境安装"></a>3.NODE环境安装</h2><p>3.1准备NODE安装包</p>
+<p>我这⾥下载的是 node-v12.16.3-linux-x64.tar.xz 安装包，并将其直接放在了 root ⽬录下</p>
+<p>3.2 创建⽬录并解压</p>
+<p>1、在 /usr/local/ 下创建 node ⽂件夹并进⼊</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/</span><br><span class="line">mkdir node</span><br><span class="line">cd node</span><br></pre></td></tr></table></figure>
+
+<p>2、将 Node 的安装包解压到 /usr/local/node 中即可</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost node]# tar -xJvf node-v12.16.3-linux-x64.tar.xz</span><br></pre></td></tr></table></figure>
+
+<p>解压完之后， /usr/local/node ⽬录中会出现⼀个 node-v12.16.3-linux-x64 的⽬录</p>
+<p>3.3配置NODE系统环境变量</p>
+<p>编辑 ~/.bash_profile ⽂件，在⽂件末尾追加如下信息:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Nodejs</span></span><br><span class="line">export PATH=/usr/local/node/node-v12.16.3-linux-x64/bin:$PATH</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593272512946.png" alt="1593272512946"></p>
+<p>刷新环境变量，使之⽣效即可：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.bash_profile</span><br></pre></td></tr></table></figure>
+
+
+
+<p>3.4 检查安装结果</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm version</span><br><span class="line">npx -v</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="4-MAVEN项⽬构建和管理⼯具安装"><a href="#4-MAVEN项⽬构建和管理⼯具安装" class="headerlink" title="4.MAVEN项⽬构建和管理⼯具安装"></a>4.MAVEN项⽬构建和管理⼯具安装</h2><p>4.1准备MAVEN安装包并解压</p>
+<p>   这⾥下载的是 apache-maven-3.6.3-bin.tar.gz 安装包，并将其放置于提前创建好的 /opt/maven ⽬录下。 </p>
+<p>执⾏命令解压之：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">tar zxvf apache-maven-3.6.3-bin.tar.gz</span><br></pre></td></tr></table></figure>
+
+<p>即可在当前⽬录得到 /opt/maven/apache-maven-3.6.3 ⽬录</p>
+<p>4.2 配置MAVEN加速镜像源</p>
+<p>这⾥配置的是阿⾥云的maven镜像源。 </p>
+<p>编辑修改 /opt/maven/apache-maven-3.6.3/conf/settings.xml </p>
+<p>⽂件，</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim &#x2F;opt&#x2F;maven&#x2F;apache-maven-3.6.3&#x2F;conf&#x2F;settings.xml</span><br></pre></td></tr></table></figure>
+
+
+
+<p>在 <mirrors></mirrors> 标签对⾥添加如下内容即可：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line"> &lt;id&gt;alimaven&lt;/id&gt;</span><br><span class="line"> &lt;name&gt;aliyun maven&lt;/name&gt;</span><br><span class="line"> &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;</span><br><span class="line"> &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;</span><br><span class="line">&lt;/mirror&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593272732051.png" alt="1593272732051"></p>
+<p>4.3 配置环境变量</p>
+<p>因为下载的是⼆进制版安装包，所以解压完，配置好环境变量即可使⽤了。 </p>
+<p>编辑修改 /etc/profile ⽂件，在⽂件尾部添加如下内容，配置 maven 的安装路径</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export MAVEN_HOME=/opt/maven/apache-maven-3.6.3</span><br><span class="line">export PATH=$MAVEN_HOME/bin:$PATH</span><br></pre></td></tr></table></figure>
+
+<p>接下来执⾏ source /etc/profile 来刷新环境变量，让 maven 环境的路径配置⽣效，</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+
+
+
+<p>4.4检验安装结果</p>
+<p>执⾏ mvn –v ，能打印出 maven 版本信息说明安装、配置成功：</p>
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593272830481.png" alt="1593272830481"></p>
+<h2 id="5-mysql-前"><a href="#5-mysql-前" class="headerlink" title="5.mysql(前)"></a>5.mysql(前)</h2><p>下载地址：<a href="https://dev.mysql.com/downloads/mysql/5.7.html#downloads" target="_blank" rel="noopener">https://dev.mysql.com/downloads/mysql/5.7.html#downloads</a></p>
+<p>一、 环境检查</p>
+<p>1、检查是否已经安装过mysql，执行命令.</p>
+<p>1、检查是否已经安装过mysql，执行命令.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost /]# rpm -qa | grep mysql</span><br></pre></td></tr></table></figure>
+
+<p>从执行结果，可以看出我们已经安装了<strong>mysql-libs-5.1.73-5.el6_6.x86_64</strong>，执行删除命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost /]# rpm -e --nodeps mysql-libs-5.1.73-5.el6_6.x86_64</span><br></pre></td></tr></table></figure>
+
+<p>2、查询所有Mysql对应的文件夹</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost /]# whereis mysql</span><br><span class="line">mysql: /usr/bin/mysql /usr/include/mysql</span><br><span class="line">[root@localhost lib]# find / -name mysql</span><br><span class="line">/data/mysql</span><br><span class="line">/data/mysql/mysql</span><br></pre></td></tr></table></figure>
+
+<p>删除相关目录或文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost /]#  rm -rf /usr/bin/mysql /usr/include/mysql /data/mysql /data/mysql/mysql</span><br></pre></td></tr></table></figure>
+
+<p>验证是否删除完毕</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost &#x2F;]# whereis mysql</span><br><span class="line">mysql:</span><br><span class="line">[root@localhost &#x2F;]# find &#x2F; -name mysql</span><br><span class="line">[root@localhost &#x2F;]#</span><br></pre></td></tr></table></figure>
+
+<p>3、检查mysql用户组和用户是否存在，如果没有，则创建</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost /]# cat /etc/group | grep mysql</span><br><span class="line">[root@localhost /]# cat /etc/passwd |grep mysql</span><br><span class="line">[root@localhost /]# groupadd mysql</span><br><span class="line">[root@localhost /]# useradd -r -g mysql mysql</span><br><span class="line">[root@localhost /]#</span><br></pre></td></tr></table></figure>
+
+<p>（codesheep 创建MYSQL⽤户和⽤户组</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">groupadd mysql</span><br><span class="line">useradd -g mysql mysql</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>4、从官网下载是用于Linux的Mysql安装包</p>
+<p><a href="https://dev.mysql.com/downloads/mysql/5.7.html#downloads" target="_blank" rel="noopener">https://dev.mysql.com/downloads/mysql/5.7.html#downloads</a></p>
+<p>二 安装Mysql</p>
+<p>1、使用在Windows下好的mysql使用fz传输到服务器根目录/下，找到Mysql安装包：<strong>mysql-5.7.30-linux-glibc2.12-x86_64.tar.gz</strong>执行解压命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost &#x2F;]#  tar -xzvf mysql-5.7.30-linux-glibc2.12-x86_64.tar.gz</span><br><span class="line">[root@localhost &#x2F;]# ls</span><br><span class="line">mysql-5.7.30-linux-glibc2.12-x86_64</span><br><span class="line">mysql-5.7.30-linux-glibc2.12-x86_64.tar.gz</span><br></pre></td></tr></table></figure>
+
+<p>解压完成后，可以看到当前目录下多了一个解压文件，移动该文件到<strong>/usr/local/</strong>下，并将文件夹名称修改为<strong>mysql</strong>。</p>
+<p>执行命令如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost /]# mv mysql-5.7.30-linux-glibc2.12-x86_64 /usr/local/</span><br><span class="line">[root@localhost /]# cd /usr/local/</span><br><span class="line">[root@localhost /]# mv mysql-5.7.30-linux-glibc2.12-x86_64 mysql</span><br></pre></td></tr></table></figure>
+
+<p>(  … 如果<strong>/usr/local/</strong>下不存在<strong>mysql</strong>文件夹，直接执行如下命令，也可达到上述效果。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost /]# mv mysql-5.7.24-linux-glibc2.12-x86_64 /usr/local/mysql</span><br></pre></td></tr></table></figure>
+
+<p>…)</p>
+<p>2、在<strong>/usr/local/mysql</strong>目录下创建data目录</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost /]# mkdir /usr/local/mysql/data</span><br></pre></td></tr></table></figure>
+
+<p>3、更改mysql目录下所有的目录及文件夹所属的用户组和用户，以及权限</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost /]# chown -R mysql:mysql /usr/local/mysql</span><br><span class="line">[root@localhost /]# chmod -R 755 /usr/local/mysql</span><br></pre></td></tr></table></figure>
+
+<p>4、编译安装并初始化mysql,<strong>务必记住初始化输出日志末尾的密码（数据库管理员临时密码）</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost /]# cd /usr/local/mysql/bin</span><br><span class="line">[root@localhost bin]# ./mysqld --initialize --user=mysql --datadir=/usr/local/mysql/data --basedir=/usr/local/mysql</span><br></pre></td></tr></table></figure>
+
+<p><strong>(补充说明：</strong></p>
+<p>第4步时，可能会出现错误：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/4773465-f61d450c92002962.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp" alt="img"></p>
+<p>出现该问题首先检查该链接库文件有没有安装使用 命令进行核查</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost bin]# rpm -qa|grep libaio   </span><br><span class="line">[root@localhost bin]#</span><br></pre></td></tr></table></figure>
+
+<p>运行命令后发现系统中无该链接库文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost bin]#  yum install  libaio-devel.x86_64</span><br></pre></td></tr></table></figure>
+
+<p>安装成功后，继续运行数据库的初始化命令，此时可能会出现如下错误：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/4773465-1285a491ff73632f.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp" alt="img"></p>
+<p>执行如下命令后：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost bin]#  yum -y install numactl</span><br></pre></td></tr></table></figure>
+
+<p>执行无误之后，再重新执行第4步初始化命令，无误之后再进行第5步操作！)</p>
+<p>5、运行初始化命令成功后，输出日志如下：</p>
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593353115933.png" alt="1593353115933"></p>
+<p>密码：dQSH_UMTR1GC</p>
+<p>后端1</p>
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593390770307.png" alt="1593390770307"></p>
+<p>初始密码：aq*aheB4&amp;Dei</p>
+<p>记录日志最末尾位置<strong>root@localhost:</strong>后的字符串，此字符串为mysql管理员临时登录密码。</p>
+<p>6、编辑配置文件my.cnf，添加配置如下</p>
+<p>(….可以不走这一步，走下一步</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;etc&#x2F;my.cnf</span><br><span class="line"></span><br><span class="line">[root@localhost my.cnf]# pwd</span><br><span class="line">&#x2F;etc&#x2F;my.cnf</span><br><span class="line">[root@localhost my.cnf]# vim my.cnf</span><br></pre></td></tr></table></figure>
+
+<p>…)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost bin]#  vim &#x2F;etc&#x2F;my.cnf</span><br><span class="line"></span><br><span class="line">[mysqld]</span><br><span class="line">datadir&#x3D;&#x2F;usr&#x2F;local&#x2F;mysql&#x2F;data</span><br><span class="line">port &#x3D; 3306</span><br><span class="line">sql_mode&#x3D;NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES</span><br><span class="line">symbolic-links&#x3D;0</span><br><span class="line">max_connections&#x3D;400</span><br><span class="line">innodb_file_per_table&#x3D;1</span><br><span class="line">#表名大小写不明感，敏感为</span><br><span class="line">lower_case_table_names&#x3D;1</span><br></pre></td></tr></table></figure>
+
+<p>7、启动mysql服务器</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost /]# /usr/local/mysql/support-files/mysql.server start</span><br></pre></td></tr></table></figure>
+
+<p>显示如下结果，说明数据库安装成功</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/4773465-f25f02b9deefad0d.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp" alt="img"></p>
+<p>如果出现如下提示信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Starting MySQL... ERROR! The server quit without updating PID file</span><br></pre></td></tr></table></figure>
+
+<p>查看是否存在mysql和mysqld的服务，如果存在，则结束进程，再重新执行启动命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#查询服务</span><br><span class="line">ps -ef|grep mysql</span><br><span class="line">ps -ef|grep mysqld</span><br><span class="line"></span><br><span class="line">#结束进程</span><br><span class="line">kill -9 PID</span><br><span class="line"></span><br><span class="line">#启动服务</span><br><span class="line"> &#x2F;usr&#x2F;local&#x2F;mysql&#x2F;support-files&#x2F;mysql.server start</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/4773465-a241c31f84a0c85b.png?imageMogr2/auto-orient/strip%7CimageView2/2/format/webp" alt="img"></p>
+<p>8、添加软连接，并重启mysql服务</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost /]#  ln -s /usr/local/mysql/support-files/mysql.server /etc/init.d/mysql </span><br><span class="line">[root@localhost /]#  ln -s /usr/local/mysql/bin/mysql /usr/bin/mysql</span><br><span class="line">[root@localhost /]#  service mysql restart</span><br></pre></td></tr></table></figure>
+
+
+
+<p>9、登录mysql，修改密码(密码为步骤5生成的临时密码)</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost /]#  mysql -u root -p</span><br><span class="line">Enter password:</span><br><span class="line"><span class="meta">mysql&gt;</span><span class="bash"><span class="built_in">set</span> password <span class="keyword">for</span> root@localhost = password(<span class="string">'123yang'</span>);</span></span><br></pre></td></tr></table></figure>
+
+<p>10、开放远程连接</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt;use mysql;</span><br><span class="line">msyql&gt;update user set user.Host&#x3D;&#39;%&#39; where user.User&#x3D;&#39;root&#39;;</span><br><span class="line">mysql&gt;flush privileges;</span><br></pre></td></tr></table></figure>
+
+<p>11、设置开机自动启动</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1、将服务文件拷贝到init.d下，并重命名为mysql</span><br><span class="line">[root@localhost /]# cp /usr/local/mysql/support-files/mysql.server /etc/init.d/mysqld</span><br><span class="line">2、赋予可执行权限</span><br><span class="line">[root@localhost /]# chmod +x /etc/init.d/mysqld</span><br><span class="line">3、添加服务</span><br><span class="line">[root@localhost /]# chkconfig --add mysqld</span><br><span class="line">4、显示服务列表</span><br><span class="line">[root@localhost /]# chkconfig --list</span><br></pre></td></tr></table></figure>
+
+<p>12 连接navicat</p>
+<p>   检查 防火墙（linux）是否关闭？或者释放了3306（如果防火墙关闭了，就无需释放）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">  firewall-cmd --state</span></span><br></pre></td></tr></table></figure>
+
+<p>如果是开着的，直接关闭，使用指令  # systemctl stop firewalld</p>
+<h2 id="6-redis（前）"><a href="#6-redis（前）" class="headerlink" title="6.redis（前）　　　　"></a>6.redis（前）　　　　</h2><p>1、在 /usr/local/ 下创建 redis ⽂件夹并进⼊</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/</span><br><span class="line">mkdir redis</span><br><span class="line">cd redis</span><br></pre></td></tr></table></figure>
+
+<p>2、将 Redis 安装包解压到 /usr/local/redis 中即可</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost redis]# tar zxvf redis-5.0.5.tar.gz</span><br></pre></td></tr></table></figure>
+
+<p>解压完之后， /usr/local/redis ⽬录中会出现⼀个 redis-5.0.5 的⽬录</p>
+<p>3.编译并安装</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd redis-5.0.5</span><br><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
+
+
+
+<p>4.将REDIS 安装为系统服务并后台启动</p>
+<p>进⼊ utils ⽬录，并执⾏如下脚本即可：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost redis-5.0.8]# cd utils/</span><br><span class="line">[root@localhost utils]# ./install_server.sh</span><br></pre></td></tr></table></figure>
+
+<p>此处我全部选择的默认配置即可，有需要可以按需定制.默认直接按enter键</p>
+<p>5.查看REDIS服务启动情况</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status redis_6379.service</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593402725812.png" alt="1593402725812"></p>
+<p>6.启动REDIS客户端并测试</p>
+<p>启动⾃带的 redis-cli 客户端，测试通过：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">redis-cli</span><br><span class="line">ping</span><br></pre></td></tr></table></figure>
+
+<p>但是此时只能在本地访问，⽆法远程连接，因此还需要做部分设置</p>
+<p>7.设置允许远程连接</p>
+<p>编辑 redis 配置⽂件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim &#x2F;etc&#x2F;redis&#x2F;6379.conf</span><br></pre></td></tr></table></figure>
+
+<p>将 bind 127.0.0.1 修改为 0.0.0.0</p>
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593402870032.png" alt="1593402870032"></p>
+<p>然后重启 Redis 服务即可：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart redis_6379.service</span><br></pre></td></tr></table></figure>
+
+
+
+<p>8.设置访问密码</p>
+<p>编辑 redis 配置⽂件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim &#x2F;etc&#x2F;redis&#x2F;6379.conf</span><br></pre></td></tr></table></figure>
+
+
+
+<p>找到如下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#requirepass foobared</span><br></pre></td></tr></table></figure>
+
+<p>去掉注释，将 foobared 修改为⾃⼰想要的密码，保存即可。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">requirepass 123yang</span><br></pre></td></tr></table></figure>
+
+<p>保存，重启 Redis 服务即可</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart redis_6379.service</span><br></pre></td></tr></table></figure>
+
+<p>这样后续的访问需要先输⼊密码认证通过⽅可：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">redis-cli</span><br><span class="line">ping</span><br><span class="line">auth 123yang</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="7-rabbitmq"><a href="#7-rabbitmq" class="headerlink" title="7.rabbitmq"></a>7.rabbitmq</h2><p>1.⾸先安装ERLANG环境</p>
+<p>因为 RabbitMQ 需要 erlang 环境的⽀持，所以必须先安装 erlang 。</p>
+<p>我们这⾥要安装的是 erlang-22.3.3-1.el7.x86_64.rpm ，所以⾸先执⾏如下命令来安装其对应的 </p>
+<p>yum repo ： </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -s https://packagecloud.io/install/repositories/rabbitmq/erlang/script.rpm.sh | sudo bash</span><br></pre></td></tr></table></figure>
+
+<p>接下来执⾏如下命令正式安装 erlang 环境：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install erlang-22.3.3-1.el7.x86_64</span><br></pre></td></tr></table></figure>
+
+<p>接下来可以直接执⾏如下命令，测试 erlang 是否安装成功：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">erl</span><br></pre></td></tr></table></figure>
+
+<p>2.安装RABBITMQ</p>
+<p>接下来正式开始安装 rabbitmq ，⾸先依然是安装其对应的 yum repo ：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh | sudo bash</span><br></pre></td></tr></table></figure>
+
+<p>然后执⾏如下命令正式安装 rabbitmq ：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install rabbitmq-server-3.8.3-1.el7.noarch</span><br></pre></td></tr></table></figure>
+
+<p>3.设置RABBITMQ开机启动</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chkconfig rabbitmq-server on</span><br></pre></td></tr></table></figure>
+
+<p>4.启动RABBITMQ服务</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start rabbitmq-server.service</span><br></pre></td></tr></table></figure>
+
+<p>5.开启WEB可视化管理插件：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rabbitmq-plugins enable rabbitmq_management</span><br></pre></td></tr></table></figure>
+
+<p>6.我们可以在后台先添加⼀个⽤户/密码对：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">rabbitmqctl add_user yang 123yang</span><br><span class="line">rabbitmqctl set_user_tags yang administrator</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//登录192.168.222.132：15672</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593408671609.png" alt="1593408671609"></p>
+<h2 id="8-应⽤服务器tomcat安装部署"><a href="#8-应⽤服务器tomcat安装部署" class="headerlink" title="8.应⽤服务器tomcat安装部署"></a>8.应⽤服务器tomcat安装部署</h2><p>1.解压和安装</p>
+<p>在/usr/local/下新建tomcat文件 进入tomcat，使用fz把下好的压缩包放进</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/</span><br><span class="line">mkdir tomcat</span><br><span class="line">cd tomcat</span><br></pre></td></tr></table></figure>
+
+<p>解压</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost tomcat]# tar -zxvf apache-tomcat-8.5.56.tar.gz</span><br></pre></td></tr></table></figure>
+
+
+
+<p>2.启动TOMCAT</p>
+<p>直接进 apache-tomcat-8.5.56 ⽬录，执⾏其中 bin ⽬录下的启动脚本即可</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost tomcat]# cd apache-tomcat-8.5.56/</span><br><span class="line">[root@localhost apache-tomcat-8.5.56]# cd bin/</span><br><span class="line">[root@localhost bin]# ./startup.sh</span><br></pre></td></tr></table></figure>
+
+<p>访问ip+8080</p>
+<p>3.配置快捷操作和开机启动</p>
+<p>⾸先进⼊ /etc/rc.d/init.d ⽬录，创建⼀个名为 tomcat(init.d下有) 的⽂件，并赋予执⾏权限</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# cd /etc/rc.d/init.d/</span><br><span class="line">[root@localhost init.d]# touch tomcat</span><br><span class="line">[root@localhost init.d]# chmod +x tomcat</span><br></pre></td></tr></table></figure>
+
+<p>接下来编辑 tomcat ⽂件，</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim tomcat</span><br></pre></td></tr></table></figure>
+
+
+
+<p>并在其中加⼊如下内容：</p>
+<p>记得把目录改成你自己的文件目录</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line"><span class="meta">#</span><span class="bash">chkconfig:- 20 90</span></span><br><span class="line"><span class="meta">#</span><span class="bash">description:tomcat</span></span><br><span class="line"><span class="meta">#</span><span class="bash">processname:tomcat</span></span><br><span class="line">TOMCAT_HOME=/usr/local/tomcat/apache-tomcat-8.5.56</span><br><span class="line">case $1 in</span><br><span class="line"> start) su root $TOMCAT_HOME/bin/startup.sh;;</span><br><span class="line"> stop) su root $TOMCAT_HOME/bin/shutdown.sh;;</span><br><span class="line"> *) echo "require start|stop" ;;</span><br><span class="line">esac</span><br></pre></td></tr></table></figure>
+
+<p>4.这样后续对于Tomcat的开启和关闭只需要执⾏如下命令即可：（发现没有用）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">service  tomcat start</span><br><span class="line">service  tomcat stop</span><br></pre></td></tr></table></figure>
+
+<p>5.最后加入开机启动即可</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost init.d]# chkconfig --add tomcat</span><br><span class="line">[root@localhost init.d]# chkconfig tomcat on</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="9-WEB服务器NGINX安装部署（前）"><a href="#9-WEB服务器NGINX安装部署（前）" class="headerlink" title="9.WEB服务器NGINX安装部署（前）"></a>9.WEB服务器NGINX安装部署（前）</h2><p>1.解压</p>
+<p>1、在 /usr/local/ 下创建 nginx ⽂件夹并进⼊</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/</span><br><span class="line">mkdir nginx</span><br><span class="line">cd nginx</span><br></pre></td></tr></table></figure>
+
+
+
+<p>2、将 Nginx 安装包解压到 /usr/local/nginx 中即可</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost nginx]# tar zxvf nginx-1.18.0.tar.gz</span><br></pre></td></tr></table></figure>
+
+<p>解压完之后， /usr/local/nginx ⽬录中会出现⼀个 nginx-1.18.0 的⽬录</p>
+<p>3.预先安装额外的依赖(暂时没发现有什么用)</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum -y install pcre-devel</span><br><span class="line">yum -y install openssl openssl-devel</span><br></pre></td></tr></table></figure>
+
+<p>4.编译安装NGINX</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd nginx-1.17.10</span><br><span class="line">./configure</span><br><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，Nginx的可执⾏⽂件位置位于</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/nginx/sbin/nginx</span><br></pre></td></tr></table></figure>
+
+<p>5.启动NGINX</p>
+<p>直接执⾏如下命令即可：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost sbin]# /usr/local/nginx/sbin/nginx</span><br></pre></td></tr></table></figure>
+
+<p>访问本机IP地址即可看到nginx首页</p>
+<p>如果想停⽌Nginx服务，可执⾏：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/nginx/sbin/nginx -s stop</span><br></pre></td></tr></table></figure>
+
+<p>如果修改了配置⽂件后想重新加载Nginx，可执⾏：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/nginx/sbin/nginx -s reload</span><br></pre></td></tr></table></figure>
+
+<p>注意其配置⽂件位于：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/nginx/conf/nginx.conf</span><br></pre></td></tr></table></figure>
+
+<p>10.docker</p>
+<p>1.安装DOCKER</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y docker</span><br></pre></td></tr></table></figure>
+
+<p>2.开启DOCKER服务</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start docker.service</span><br></pre></td></tr></table></figure>
+
+<p>3.查看安装结果</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker version</span><br></pre></td></tr></table></figure>
+
+<p>4.设置开机启动</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable docker.service</span><br></pre></td></tr></table></figure>
+
+<p>5.配置DOCKER镜像下载加速</p>
+<p>默认安装后的 Docker 环境在拉取 Docker 镜像时速度很慢：</p>
+<p>因此我们需要⼿动配置镜像加速源，提升获取 Docker 镜像的速度。 </p>
+<p>配置⽅法⾮常简单。 </p>
+<p>直接编辑配置⽂件：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/docker/daemon.json</span><br></pre></td></tr></table></figure>
+
+<p>在其中加⼊加速镜像源地址即可：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">"registry-mirrors": ["http://hub-mirror.c.163.com"]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>⽐如这⾥使⽤的是 ⽹易 的加速源，其他像 阿⾥云 、 DaoCloud 这些也都提供加速源，按需选择即可。 </p>
+<p>加完加速地址后，重新加载配置⽂件，重启 docker 服务即可：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl daemon-reload</span><br><span class="line">systemctl restart docker.service</span><br></pre></td></tr></table></figure>
+
+<p>这样镜像加速器就配置完成了，后续下载 docker 镜像速度将⼤增。</p>
+<h2 id="前端项目部署："><a href="#前端项目部署：" class="headerlink" title="前端项目部署："></a>前端项目部署：</h2><p>1.把项目压缩包（记得先压缩）从Windows使用fz传到服务器/root/workspase下，</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /root/workspase</span><br></pre></td></tr></table></figure>
+
+<p>2.解压</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">unzip ruoyi-ui.zip</span><br><span class="line">cd ruoyi.ui</span><br></pre></td></tr></table></figure>
+
+<p>3.使用淘宝镜像下载依赖</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ruoyi-ui]# npm install --unsafe-perm --registry=https:registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+
+
+<p>4.编译打包</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ruoyi-ui]# npm run build:prod</span><br></pre></td></tr></table></figure>
+
+<p>打包成功后生成dist目录</p>
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593479857712.png" alt="1593479857712"></p>
+<p>5.使用nginx部署dist即可</p>
+<p>dist文件目录为</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/root/workspace/ruoyi-ui/dist</span><br></pre></td></tr></table></figure>
+
+
+
+<p>5.1 配置nginx</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/nginx</span><br></pre></td></tr></table></figure>
+
+<p>5.2 修改nginx下的conf文件下的nginx.conf文件（这里使用fz 本地编辑器来修改）</p>
+<p>第一个改动：</p>
+<p>修改这<img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593483646404.png" alt="1593483646404"></p>
+<p>改成：<img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593483723400.png" alt="1593483723400"></p>
+<p>第二个改动：<img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593483820866.png" alt="1593483820866"></p>
+<p>把user放开（也可以不用，这么做是避免出现403问题，生产环境可以不改动）</p>
+<p>（….以后执行只需走这一步</p>
+<p>6.启动nginx</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/nginx/sbin</span><br><span class="line">[root@localhost sbin]# ./nginx</span><br></pre></td></tr></table></figure>
+
+<p>……）</p>
+<h2 id="后端项目部署"><a href="#后端项目部署" class="headerlink" title="后端项目部署"></a>后端项目部署</h2><p>1.把项目文件放在/root/workspace 下，进入目录</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ruoyi</span><br></pre></td></tr></table></figure>
+
+<p>2.使用jar包部署</p>
+<p> 2.1使用maven把文件打成jar包</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn package</span><br></pre></td></tr></table></figure>
+
+<p>(…… 以后执行只需走这一步</p>
+<p>2.2.打包成功后再target下生成jar包，把jar包拷贝到上一个目录/root/workspace/ruoyi 目录下</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /root/workspace/ruoyi</span><br><span class="line">[root@localhost ruoyi]# nohup java -jar ruoyi.jar &amp;</span><br><span class="line">意思是直接在后台运行jar包</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593484459060.png" alt="1593484459060"></p>
+<p>这是jar包运行成功</p>
+<p>…..)</p>
+<p>但是这时候发现前端和后端没有关联在一起，访问页面还是出不来。</p>
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593484620203.png" alt="1593484620203"></p>
+<p>2.3 还需要配置一下nginx的代理（上面前端nginx配置修改也有），让他转发到后端服务器（我用的是192.168.222.132）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">location / prod-api/ &#123;</span><br><span class="line">              proxy_set_header Host $http_host;</span><br><span class="line">              proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">              proxy_set_header REMOTE-HOST $remote_addr;</span><br><span class="line">              proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">              proxy_pass http://192.168.222.132:8080/;</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>3.重新启动前端服务器nginx</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/nginx/sbin/nginx -s reload</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<p>3.使用war包部署到tomcat</p>
+<p>3.1 第一个改动：修改项目pom文件 package改成war</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">   &lt;groupId&gt;com.ruoyi&lt;/groupId&gt;</span><br><span class="line">&lt;artifactId&gt;ruoyi&lt;/artifactId&gt;</span><br><span class="line">&lt;version&gt;2.3.0&lt;/version&gt;</span><br><span class="line">&lt;packaging&gt;war&lt;/packaging&gt;</span><br></pre></td></tr></table></figure>
+
+<p>第二个改动：pom配置排除内置tomcat</p>
+ <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- SpringBoot Web容器 --&gt;</span><br><span class="line">		&lt;dependency&gt;</span><br><span class="line">			&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">			&lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;</span><br><span class="line">		&lt;/dependency&gt;</span><br><span class="line">		&lt;!--排除内置tomcat--&gt;</span><br><span class="line">		&lt;dependency&gt;</span><br><span class="line">			&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">			&lt;artifactId&gt;spring-boot-starter-tomcat&lt;/artifactId&gt;</span><br><span class="line">			&lt;scope&gt;provided&lt;/scope&gt;</span><br><span class="line">		&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+
+<p>第三个改动：新建启动类</p>
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593481740185.png" alt="1593481740185"></p>
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593482062607.png" alt="1593482062607"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.ruoyi;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.builder.SpringApplicationBuilder;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.web.servlet.support.SpringBootServletInitializer;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@program</span>: ruoyi</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@description</span>: tomcat部署启动类</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span>: yangzx</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@create</span>: 2020-06-30 09:49</span></span><br><span class="line"><span class="comment"> **/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//继承SpringBootServletInitializer类</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SpringBootStartApplication</span> <span class="keyword">extends</span> <span class="title">SpringBootServletInitializer</span> </span>&#123;</span><br><span class="line">    <span class="comment">//重写configure方法</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> SpringApplicationBuilder <span class="title">configure</span><span class="params">(SpringApplicationBuilder builder)</span> </span>&#123;</span><br><span class="line">       <span class="comment">// return super.configure(builder);</span></span><br><span class="line">        <span class="keyword">return</span> builder.sources(RuoYiApplication<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="3">
+<li>2使用fz 把更新的pom文件覆盖掉原来的pom文件，再把新增的启动类SpringBootStartApplication添加到服务器</li>
+</ol>
+<ol start="3">
+<li>3清理targe，把生成的jar文件清除</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost target]# cd ../</span><br><span class="line">[root@localhost ruoyi]# mvn clean</span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="3">
+<li>4打包，这时候生成的是war包</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ruoyi]#mvn package</span><br><span class="line"></span><br><span class="line">[root@localhost ruoyi]# cd target/</span><br><span class="line">[root@localhost target]# ll</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593482767275.png" alt="1593482767275"></p>
+<p>3.5 进入tomcat</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/tomcat/</span><br><span class="line"></span><br><span class="line">[root@localhost tomcat]#cd apache-tomcat-8.5.56/</span><br></pre></td></tr></table></figure>
+
+
+
+<p>3.6 把war包拷贝放入webapps(当前目录）即可</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost webapps]#cp /root/workspace/ruoyi/ruoyi.war ./</span><br></pre></td></tr></table></figure>
+
+<p>3.7 启动tomcat</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service tomcat start</span><br></pre></td></tr></table></figure>
+
+<p>如果报错的话：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> cd /usr/local/tomcat/apache-tomcat-8.5.56/bin</span><br><span class="line">[root@localhost bin]# ./startup.sh</span><br></pre></td></tr></table></figure>
+
+
+
+<p>启动成功后，访问192.168.222.134:8080后是tomcat页面</p>
+<p>3.8 修改tomcat目录下的server.xml文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/tomcat/apache-tomcat-8.5.56/conf</span><br></pre></td></tr></table></figure>
+
+<p>在这里修改</p>
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593507053661.png" alt="1593507053661"></p>
+<p>添加</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Context</span> <span class="attr">path</span>=<span class="string">"/"</span> <span class="attr">docBase</span>=<span class="string">"/usr/local/tomcat/apache-tomcat-8.5.56/webapps/ruoyi"</span> <span class="attr">reloadable</span>=<span class="string">"false"</span>&gt;</span><span class="tag">&lt;/<span class="name">Context</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>改成：</p>
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593507495042.png" alt="1593507495042"></p>
+<p>3.7 重新启动tomcat</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/tomcat/apache-tomcat-8.5.56/bin</span><br><span class="line">[root@localhost bin]# ./shutdown.sh      关闭tomcat</span><br><span class="line">[root@localhost bin]# ./startup.sh       启动tomcat</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="配置两个后端节点服务器一个前端服务器"><a href="#配置两个后端节点服务器一个前端服务器" class="headerlink" title="配置两个后端节点服务器一个前端服务器"></a>配置两个后端节点服务器一个前端服务器</h2><p>后端1：192.168.222.132</p>
+<p>后端2:   192.168.222.133</p>
+<p>前端1:   192.168.222.134</p>
+<p>各个服务器安装上面前后端部署</p>
+<p>1.后端服务器2在/root下新建workspace文件，并且把前面打包好的war包和jar包传到这。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /root</span><br><span class="line">mkdir /workspace</span><br></pre></td></tr></table></figure>
+
+<p>2.进入tomcat下webapps</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/tomcat/apache-tomcat-8.5.56/webapps</span><br></pre></td></tr></table></figure>
+
+
+
+<p>3.把war包拷贝到webapps下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp /root/workspace/ruoyi/ruoyi.war ./</span><br></pre></td></tr></table></figure>
+
+<p>4.修改tomcat目录下的server.xml文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/tomcat/apache-tomcat-8.5.56/conf</span><br></pre></td></tr></table></figure>
+
+<p>在这里修改</p>
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593507053661.png" alt="1593507053661"></p>
+<p>添加</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Context</span> <span class="attr">path</span>=<span class="string">"/"</span> <span class="attr">docBase</span>=<span class="string">"/usr/local/tomcat/apache-tomcat-8.5.56/webapps/ruoyi"</span> <span class="attr">reloadable</span>=<span class="string">"false"</span>&gt;</span><span class="tag">&lt;/<span class="name">Context</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>改成：</p>
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593507495042.png" alt="1593507495042"></p>
+<p>5.启动tomcat</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/tomcat/apache-tomcat-8.5.56/bin/</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./startup.sh</span><br></pre></td></tr></table></figure>
+
+
+
+<p>6.修改nginx配置文件 nginx.xml</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/nginx/conf</span><br></pre></td></tr></table></figure>
+
+<p>添加代理</p>
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593523149268.png" alt="1593523149268"></p>
+<p>修改路径</p>
+<p><img src="C:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593522617771.png" alt="1593522617771"></p>
+<p>7.重启nginx</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/nginx/sbin/nginx -s reload</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/07/02/linux%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E6%8C%87%E5%AF%BC/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/02/java%E5%9F%BA%E7%A1%80%E7%9B%B8%E5%85%B3/" class="archive-article-date">
-  	<time datetime="2020-07-02T02:52:52.067Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-02</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/07/02/java%E5%9F%BA%E7%A1%80%E7%9B%B8%E5%85%B3/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">java基础相关</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/02/java%E5%9F%BA%E7%A1%80%E7%9B%B8%E5%85%B3/">java基础相关</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#关闭防火墙"><span class="toc-number">1.</span> <span class="toc-text">关闭防火墙</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-vim常用命令"><span class="toc-number">2.</span> <span class="toc-text">1.vim常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-JDK（JAVA环境）安装"><span class="toc-number">3.</span> <span class="toc-text">2.JDK（JAVA环境）安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-NODE环境安装"><span class="toc-number">4.</span> <span class="toc-text">3.NODE环境安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-MAVEN项⽬构建和管理⼯具安装"><span class="toc-number">5.</span> <span class="toc-text">4.MAVEN项⽬构建和管理⼯具安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-mysql-前"><span class="toc-number">6.</span> <span class="toc-text">5.mysql(前)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-redis（前）"><span class="toc-number">7.</span> <span class="toc-text">6.redis（前）　　　　</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-rabbitmq"><span class="toc-number">8.</span> <span class="toc-text">7.rabbitmq</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-应⽤服务器tomcat安装部署"><span class="toc-number">9.</span> <span class="toc-text">8.应⽤服务器tomcat安装部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-WEB服务器NGINX安装部署（前）"><span class="toc-number">10.</span> <span class="toc-text">9.WEB服务器NGINX安装部署（前）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#前端项目部署："><span class="toc-number">11.</span> <span class="toc-text">前端项目部署：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后端项目部署"><span class="toc-number">12.</span> <span class="toc-text">后端项目部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置两个后端节点服务器一个前端服务器"><span class="toc-number">13.</span> <span class="toc-text">配置两个后端节点服务器一个前端服务器</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/02/%E7%89%9B%E5%AE%A2%E7%BD%91%20java%E9%9D%A2%E8%AF%95%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2020-07-02T02:52:40.737Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-02</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/02/%E7%89%9B%E5%AE%A2%E7%BD%91%20java%E9%9D%A2%E8%AF%95%E9%A2%98/">牛客网 java面试题</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/01/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/" class="archive-article-date">
-  	<time datetime="2020-07-01T00:55:20.232Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/01/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/">并发编程学习</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -290,8 +967,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

@@ -8,12 +8,12 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>并发编程学习 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="并发编程学习第一章1.1什么是线程​    线程是进程的一个实体，线程本身是不会独立存在的。进程是代码在数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，线程则是进程的一次执行路径，一个进程至少有一个线程，进程中的多个线程共享进程的资源。 ​    操作系统在分配资源时是把资源分配给进程的，但是CPU资源比较特殊，它是被分配到线程的，因为真正要占用CPU运行的是线程，所以也说线程是CP">
+  <meta name="description" content="并发编程学习第一章1.1什么是线程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="并发编程学习">
 <meta property="og:url" content="http://yoursite.com/2020/07/01/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="并发编程学习第一章1.1什么是线程​    线程是进程的一个实体，线程本身是不会独立存在的。进程是代码在数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，线程则是进程的一次执行路径，一个进程至少有一个线程，进程中的多个线程共享进程的资源。 ​    操作系统在分配资源时是把资源分配给进程的，但是CPU资源比较特殊，它是被分配到线程的，因为真正要占用CPU运行的是线程，所以也说线程是CP">
+<meta property="og:description" content="并发编程学习第一章1.1什么是线程">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1588748058982.png">
 <meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1588756269305.png">
@@ -27,15 +27,15 @@
 <meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1588857487938.png">
 <meta property="og:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1588857646837.png">
 <meta property="article:published_time" content="2020-07-01T00:55:20.232Z">
-<meta property="article:modified_time" content="2020-05-09T15:17:00.730Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:modified_time" content="2020-07-01T12:43:15.418Z">
+<meta property="article:author" content="yangzhixue">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="c:%5CUsers%5Cyangzhi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1588748058982.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/assets/avter.jpg">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -59,10 +59,10 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/assets/avter.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">John Doe</a></h1>
+		  <h1 class="header-author"><a href="/">yangzhixue</a></h1>
 		</hgroup>
 		
 
@@ -72,6 +72,8 @@
 				<li><a href="/">主页</a></li>
 	        
 				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+	        
+				<li><a href="/archives/index.html">归档</a></li>
 	        
 			</ul>
 		</nav>
@@ -93,13 +95,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="mail" target="_blank" href="mailto:1571032076@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -117,13 +113,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/assets/avter.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">John Doe</h1>
+			  <h1 class="header-author js-header-author">yangzhixue</h1>
 			</hgroup>
 			
 			
+			
+				
 			
 				
 			
@@ -134,24 +132,20 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="mail" target="_blank" href="mailto:1571032076@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/archives/index.html">归档</a></li>
 		        
 				</ul>
 			</nav>
@@ -186,7 +180,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="并发编程学习"><a href="#并发编程学习" class="headerlink" title="并发编程学习"></a>并发编程学习</h1><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h2 id="1-1什么是线程"><a href="#1-1什么是线程" class="headerlink" title="1.1什么是线程"></a>1.1什么是线程</h2><p>​    线程是进程的一个实体，线程本身是不会独立存在的。进程是代码在数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，线程则是进程的一次执行路径，一个进程至少有一个线程，进程中的多个线程共享进程的资源。</p>
+        <h1 id="并发编程学习"><a href="#并发编程学习" class="headerlink" title="并发编程学习"></a>并发编程学习</h1><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h2 id="1-1什么是线程"><a href="#1-1什么是线程" class="headerlink" title="1.1什么是线程"></a>1.1什么是线程</h2><a id="more"></a>
+
+<p>​    线程是进程的一个实体，线程本身是不会独立存在的。进程是代码在数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，线程则是进程的一次执行路径，一个进程至少有一个线程，进程中的多个线程共享进程的资源。</p>
 <p>​    操作系统在分配资源时是把资源分配给进程的，但是CPU资源比较特殊，它是被分配到线程的，因为真正要占用CPU运行的是线程，所以也说线程是CPU分配的基本单位。</p>
 <p>​    在Java中，当我们启动mian函数时就是启动了一个JVM的线程，而main函数所有的线程就是这个进程中的一个线程，也称主线程。</p>
 <p>   进程和线程的关系如下：</p>
@@ -422,11 +418,15 @@
   
 <nav id="article-nav">
   
-  
-    <a href="/2020/07/01/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
-      <i class="icon-circle-right"></i>
+    <a href="/2020/07/02/%E7%89%9B%E5%AE%A2%E7%BD%91%20java%E9%9D%A2%E8%AF%95%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          牛客网 java面试题
+        
+      </div>
     </a>
+  
   
 </nav>
 
@@ -443,6 +443,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#并发编程学习"><span class="toc-number">1.</span> <span class="toc-text">并发编程学习</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一章"><span class="toc-number">1.1.</span> <span class="toc-text">第一章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1什么是线程"><span class="toc-number">1.2.</span> <span class="toc-text">1.1什么是线程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-线程的创建与运行"><span class="toc-number">1.3.</span> <span class="toc-text">1.2 线程的创建与运行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3线程通知与等待"><span class="toc-number">1.4.</span> <span class="toc-text">1.3线程通知与等待</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-4-等待线程执行终止的join方法"><span class="toc-number">1.5.</span> <span class="toc-text">1.4 等待线程执行终止的join方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-5-让线程睡眠的sleep方法"><span class="toc-number">1.6.</span> <span class="toc-text">1.5 让线程睡眠的sleep方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-7-线程中断"><span class="toc-number">1.7.</span> <span class="toc-text">1.7 线程中断</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-8-理解线程上下文切换"><span class="toc-number">1.8.</span> <span class="toc-text">1.8 理解线程上下文切换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-9-线程死锁"><span class="toc-number">1.9.</span> <span class="toc-text">1.9 线程死锁</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-9-1-什么是线程死锁"><span class="toc-number">1.9.1.</span> <span class="toc-text">1.9.1 什么是线程死锁</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-9-2-如何避免死锁"><span class="toc-number">1.9.2.</span> <span class="toc-text">1.9.2 如何避免死锁</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-10-守护线程和用户线程"><span class="toc-number">1.10.</span> <span class="toc-text">1.10 守护线程和用户线程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-11-ThreadLocal"><span class="toc-number">1.11.</span> <span class="toc-text">1.11 ThreadLocal</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第二章-并非编程的其他基础知识"><span class="toc-number">1.12.</span> <span class="toc-text">第二章 并非编程的其他基础知识</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-什么是多线程并发编程"><span class="toc-number">1.13.</span> <span class="toc-text">2.1 什么是多线程并发编程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-为什么要进行多线程并发编程"><span class="toc-number">1.14.</span> <span class="toc-text">2.2 为什么要进行多线程并发编程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-java中的线程安全问题"><span class="toc-number">1.15.</span> <span class="toc-text">2.3 java中的线程安全问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-5-java中的synchronized关键字"><span class="toc-number">1.16.</span> <span class="toc-text">2.5 java中的synchronized关键字</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-1-synchronized-关键字介绍"><span class="toc-number">1.16.1.</span> <span class="toc-text">2.5.1 synchronized 关键字介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-2-synchronized-的内存语义"><span class="toc-number">1.16.2.</span> <span class="toc-text">2.5.2 synchronized 的内存语义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-6-java中的volatile关键字"><span class="toc-number">1.17.</span> <span class="toc-text">2.6 java中的volatile关键字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-7-java中的原子性操作"><span class="toc-number">1.18.</span> <span class="toc-text">2.7 java中的原子性操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-8-java中的CAS操作"><span class="toc-number">1.19.</span> <span class="toc-text">2.8 java中的CAS操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-9-unsafe类"><span class="toc-number">1.20.</span> <span class="toc-text">2.9 unsafe类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-9-1-unsafe类中的重要方法"><span class="toc-number">1.21.</span> <span class="toc-text">2.9.1 unsafe类中的重要方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-10-java指令重排序"><span class="toc-number">1.22.</span> <span class="toc-text">2.10 java指令重排序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-11-伪共享"><span class="toc-number">1.23.</span> <span class="toc-text">2.11 伪共享</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-11-1-什么是伪共享"><span class="toc-number">1.23.1.</span> <span class="toc-text">2.11.1 什么是伪共享</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-11-2-为啥会出现伪共享"><span class="toc-number">1.23.2.</span> <span class="toc-text">2.11.2 为啥会出现伪共享</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-11-3-如何避免缓存行"><span class="toc-number">1.23.3.</span> <span class="toc-text">2.11.3 如何避免缓存行</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-12-锁的概述"><span class="toc-number">1.24.</span> <span class="toc-text">2.12 锁的概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-12-1-乐观锁与悲观锁"><span class="toc-number">1.24.1.</span> <span class="toc-text">2.12.1 乐观锁与悲观锁</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-12-2-公平锁和非公平锁"><span class="toc-number">1.24.2.</span> <span class="toc-text">2.12.2 公平锁和非公平锁</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-12-3-独占锁和非独占锁"><span class="toc-number">1.24.3.</span> <span class="toc-text">2.12.3 独占锁和非独占锁</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-12-4-可重入锁"><span class="toc-number">1.24.4.</span> <span class="toc-text">2.12.4 可重入锁</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-12-5-自旋锁"><span class="toc-number">1.24.5.</span> <span class="toc-text">2.12.5 自旋锁</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
@@ -467,7 +480,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 John Doe
+    		&copy; 2020 yangzhixue
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
